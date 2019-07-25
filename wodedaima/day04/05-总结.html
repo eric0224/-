@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    /*
+      解析url参数
+        把字符串变成键值对
+          切割字符串，再在切割字符串，组成键：值
+      隐藏域的作用
+        是什么： 控件 - 特点： 看不见，但是我们在表单收集数据的时候，是可以收集到的
+        用处： 保存一些用户看不见，但是提交的时候需要的数据
+        怎么用：
+          name value，name一开始就写了跟服务器给的接口的键名一致，value，需要根据需求或是一开始写好，或是动态的修改
+      上传进度
+        一个事件
+          xhr.upload.onprogress - 正在上传事件 - 每次数据发送给服务器的时候触发
+        两个属性
+          事件对象.loaded - 已经上传了的
+          事件对象.total - 总共要上传的
+
+      ajajx的别的属性
+        type : 请求方式
+        url : 请求地址
+        data : 携带的数据
+        success : 成功的回调函数
+        error ： 失败的回调函数
+        complete : 请求完成，不管成功还是失败都会调用的函数
+        xhr : 自己指定一个xhr对象的方法，要求里面要返回一个xhr对象
+        beforeSend : 在请求发送之前的函数
+    */
+  </script>
+</body>
+</html>

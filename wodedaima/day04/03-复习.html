@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  
+</body>
+<script>
+/*
+  根据id获取旧的数据
+
+  获取id，从浏览器的地址栏解析
+    把url参数解析为一个对象，再从对象身上直接获取
+      url参数的格式： key=value&key=value
+      采用分割字符串的方式，先以 & 符号分割作为一个数组，数组  -- [key=value,key=value]
+      对象的格式：
+        {
+          key : value
+        }
+        obj[key] = value;
+      再把key=value的格式再次分割
+      得到key和value
+      直接把key和value放到对象里面
+
+  得到id了，根据id获取旧的数据，展示表单里面
+        - 图片，除了要把图片的src属性修改之外，还要把隐藏域的value也顺便一起修改了
+
+  编辑新的内容
+        - 上传图片
+        - 注意：上传成功之后也是要隐藏域的value修改
+
+  进度条
+        上传的时候，如果文件较大或者网速较慢，需要一个进度条来提示用户
+        进度的原理
+          1.外层idv
+          2.内层div
+          3.上传的事件里面，设置内层div的宽度百分比
+    ajax的上传的事件
+        xhr.upload.onprogress = function(e){
+          e.loaded - 已经上传的
+          e.total - 总共要上传的
+        }
+
+    使用bootstrap的进度条的样式
+*/
+
+</script>
+</html>
